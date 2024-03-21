@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/parallax.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/710e17ab5b.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/span.js' %}"></script>
+
+
+
+</head>
+<body>
+
+    <div class="preload">
+
+        <img src="{% static 'WebImages/printing.gif' %}" class="printpress">
+        <h2 style="position:absolute;left:575px;top:500px;display:flex">"Warming up the ink...."</h2>
+        <img src="{% static 'WebImages/loaderimage.png' %}">
+
+    </div>
+
+
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+
+          <li>
+            <a href="#" class="HomeBtn">
+              <i class='bx bxs-home'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="#viewnews" class="NewsBtn">
+              <i class='bx bx-news'></i>
+              <span class="links_name">News</span>
+            </a>
+             <span class="tooltip">News</span>
+          </li>
+          <li>
+           <a href="#createnews" class="CreateBtn">
+             <i class='bx bxs-pencil'></i>
+             <span class="links_name">Create</span>
+           </a>
+           <span class="tooltip">Create</span>
+         </li>
+         <li style="top:250px">
+           <a href="#" >
+             <i class='bx bxs-user-detail'></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+
+        </ul>
+  </div>
+
+
+    <header>
+
+        <nav>
+            <div class="container">
+                <img src="{% static 'WebImages/logo1.png' %}" class="logo">
+
+            </div>
+        </nav>
+
+        <img src="{% static 'WebImages/title.png' %}" class="big-title">
+
+
+<!--        <a class="weatherwidget-io" style="z-index:101; width:310px; top: 50%; left:150px;" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-icons="Climacons Animated"-->
+<!--           data-days="3" data-theme="beige" data-basecolor="rgba(241, 238, 229, 0.15)"-->
+<!--           data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#000000" data-suncolor="#000000"-->
+<!--           data-mooncolor="#15247b" data-cloudcolor="#000000" data-cloudfill="rgba(241, 238, 229, 0.82)"-->
+<!--           data-raincolor="#1e9fc3" data-snowcolor="#36c5ad" >NEW YORK WEATHER</a>-->
+<!--        <script>-->
+<!--            ! function(d, s, id)-->
+<!--            {-->
+<!--                var js, fjs = d.getElementsByTagName(s)[0];-->
+<!--                if (!d.getElementById(id)) {-->
+<!--                    js = d.createElement(s);-->
+<!--                    js.id = id;-->
+<!--                    js.src = 'https://weatherwidget.io/js/widget.min.js';-->
+<!--                    fjs.parentNode.insertBefore(js, fjs);-->
+<!--                }-->
+<!--            }(document, 'script', 'weatherwidget-io-js');-->
+<!--        </script>-->
+
+        <div class="card translate" data-speed="-5" style="width:316px; z-index:36 ; position:absolute;top:130px; left:150px ; background: rgba(255,255,255, 0.5); ">
+
+                <div class="containerweather">
+                    <div class="current-info">
+
+                        <div class="date-container">
+                            <div class="time" id="time">
+                                12:30 <span id="am-pm">PM</span>
+                            </div>
+                            <div class="date" id="date">
+                                Monday, 25 May
+                            </div>
+
+                        </div>
+
+                        <div class="place-container">
+                            <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                            <div id="country" class="country">IN</div>
+                        </div>
+
+
+                    </div>
+                    <div class="others" id="current-weather-items" style="color:#fff">
+
+
+                            </div>
+
+
+                </div>
+
+                <div class="today" id="current-temp">
+                        <img class="w-icon" src="" >
+                        <div class="other">
+                            <div class="day">Monday</div>
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+                    </div>
+
+                <div class="future-forecast">
+
+
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Tue</div>
+                            <img src="" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+                        <div class="weather-forecast-item">
+                            <div class="day">Wed</div>
+                            <img src="" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+                        <div class="weather-forecast-item">
+                            <div class="day">Thur</div>
+                            <img src="" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+                        <div class="weather-forecast-item">
+                            <div class="day">Fri</div>
+                            <img src="" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+                        <div class="weather-forecast-item">
+                            <div class="day">Sat</div>
+                            <img src="" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6&#176; C</div>
+                            <div class="temp">Day - 35.6&#176; C</div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+
+
+        <h1 class="homecontent translate">Read&nbsp;&nbsp;&nbsp;the&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;In&nbsp;&nbsp;&nbsp;Just&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;&nbsp;Tab</h1>
+
+
+
+        <img src="{% static 'WebImages/bg1.png' %}" class="background translate" data-speed="-0.25">
+        <img src="{% static 'WebImages/parallaximages/buildings1.png' %}" class="buildings1 translate" data-speed="0.7">
+        <img src="{% static 'WebImages/parallaximages/buildings2.png' %}" class="buildings2 translate" data-speed="0.05">
+        <img src="{% static 'WebImages/parallaximages/buildings3.png' %}" class="buildings3 translate" data-speed="-0.7">
+    </header>
+
+
+    <section id="NewsPage">
+
+<!--          <div class="con-input">-->
+<!--&lt;!&ndash;            <input placeholder="Search" type="text">&ndash;&gt;-->
+<!--&lt;!&ndash;            <i class='bx bx-search'></i>&ndash;&gt;-->
+
+<!--        </div>-->
+
+        <div class="shadow"></div>
+        <img src="{% static 'WebImages/title2.png' %}" class="big-title2">
+
+        <div class="container" style=" height:100vh;">
+
+            <div class="ShowNews" style=" overflow:auto; height:70vh;">
+
+                     {% for ele in news_article %}
+
+                        <div class="frontpage" >
+
+                            <div class="fp-cell fp-cell--1">
+                                <div class="fp-item" style=" width: 142.938px; height: 472px; ">
+                                    <div style="padding:2px">
+
+                                         <span class="myspan1" style="display:inline-block; font-size: 20px; color:#fff">
+                                             {%if ele.0.title%}
+                                             <h3 class="dynamicSpan" style="color:#F57D43">{{ele.0.title}}</h3><br>
+                                             {{ele.0.text}}
+                                             {%endif%}
+                                         </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--2">
+                                <div class="fp-item" style=" width: 316.88px; height: 220px; ">
+
+                                    <div style="padding:2px">
+                                        {%if ele.1.title%}
+                                        <img style="position:relative; float:left; width: 150px; height: 210px; object-fit: cover; padding:3px; border: 0.2px solid #75787E;" src={{ele.1.imgsrc}}>
+                                         <span class="myspan2" style="display:flex; font-size: 20px; color:#fff; padding-left:8px">
+                                             <h3 class="dynamicSpan" style="color:#F57D43">{{ele.1.title}} </h3>
+
+                                         </span>
+                                        {%endif%}
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--3">
+                                <div class="fp-item" style=" width: 142px; height: 220px;" >
+
+                                    <div style="padding:2px;">
+
+                                         <span class="myspan3" style="display:inline-block; font-size: 20px; color:#fff; background:#000;">
+                                             {% if ele.2.title %}
+                                             <img style="position:relative; width: 138px; height: 122px; object-fit: cover; padding:3px; border: 0.2px solid #75787E; " src="{{ele.2.imgsrc}}">
+                                             <h3 class="dynamicSpan" style="color:#F57D43; padding-top:3px;">{{ele.2.title}}</h3>
+                                             {%endif%}
+                                         </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--4">
+                                <div class="fp-item" style=" width: 142px; height: 220px;">
+
+                                    <div style="padding:2px;">
+                                        {%if ele.3.title%}
+                                         <span class="myspan4" style="display:inline-block; font-size: 20px; color:#fff;">
+                                             <h3 class="dynamicSpan" style="color:#F57D43; padding-top:3px;">{{ele.3.title}} </h3>
+                                             <img style="position:relative; width: 138px; height: 122px; object-fit: cover; padding:3px; border: 0.2px solid #75787E; " src={{ele.3.imgsrc}}>
+
+                                         </span>
+                                        {%endif%}
+                                    </div>
+                                    {{endif}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="backpage">
+
+                            <div class="fp-cell fp-cell--5">
+                                <div class="fp-item" style=" width: 142px; height: 220px;">
+                                    <div style="padding:2px;">
+                                         <span class="myspan5" style="display:inline-block; font-size: 20px; color:#fff; background:#000;">
+                                             {%if ele.5.title%}
+                                             <h3 class="dynamicSpan" style="color:#F57D43; padding-top:3px;">{{ele.5.title}} </h3>
+                                             <img style="position:relative; width: 138px; height: 122px; object-fit: cover; padding:3px; border: 0.2px solid #75787E; " src={{ele.5.imgsrc}}>
+                                             {%endif%}
+                                         </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--8">
+                                <div class="fp-item" style="height:220px">
+                                    <div style="padding:2px">
+                                         <span class="myspan8" style="display:inline-block; font-size: 20px; color:#fff">
+                                             {%if ele.6.title%}
+                                                <h3 class="dynamicSpan" style="color:#F57D43; ">{{ele.6.title}}</h3>
+                                                {{ele.6.text}}
+                                             {%endif%}
+                                         </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--6">
+                                <div class="fp-item" style=" width: 316.88px; height: 220px; ">
+                                    <div style="padding:2px">
+                                        {%if ele.7.title%}
+                                        <img style="position:relative; float:right; width: 150px; height: 210px; object-fit: cover; padding:3px; border: 0.2px solid #75787E;" src="{{ele.7.imgsrc}}">
+                                        <span class="myspan6" style="display:flex; font-size: 20px; color:#fff; padding-left:8px">
+                                             <h3 class="dynamicSpan" style="color:#F57D43">{{ele.7.title}}</h3>
+                                         </span>
+                                        {%endif%}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fp-cell fp-cell--7">
+                                <div class="fp-item" style=" width: 142.938px; height: 472px; ">
+                                    <div style="padding:2px">
+                                         <span class="myspan1" style="display:inline-block; font-size: 20px; color:#fff">
+                                             {%if ele.4.title%}
+                                             <h3 class="dynamicSpan" style="color:#F57D43">{{ele.4.title}}</h3><br>
+                                             {{ele.4.text}}
+                                             {%endif%}
+                                         </span>
+                                    </div>
+                                </div>
+                            </div>
+
+            </div>
+
+                    {% endfor %}
+
+            </div>
+
+
+
+<!--            <div class="content opacity">-->
+<!--                <h2>Hyper news</h2>-->
+
+<!--                <form action="" method="get">-->
+<!--                    <input type="text" name="q">-->
+<!--                    <button type="submit">Search</button>-->
+<!--                </form>-->
+
+<!--                {% for dt in listofdates %}-->
+
+<!--                    {% if q %}-->
+<!--                        {% for ele in news_article %}-->
+<!--                            {% if dt in ele.only_date and q in ele.title %}-->
+<!--                                <h4>{{dt}}</h4><ul>-->
+<!--                                {% with link_id=ele.link %}-->
+<!--                                    {% with title=ele.title %}-->
+<!--                                        <li><a href='/news/{{link_id}}'>{{title}}</a></li>-->
+<!--                                    {% endwith %}-->
+<!--                                {% endwith %}-->
+<!--                                </ul>-->
+<!--                            {% endif %}-->
+
+<!--                        {% endfor %}-->
+
+
+<!--                    {% else %}-->
+<!--                        <h4>{{ dt }}</h4>-->
+<!--                        <ul>-->
+<!--                        {% for ele in news_article %}-->
+<!--                            {% if dt in ele.only_date %}-->
+<!--                                {% with link_id=ele.link %}-->
+<!--                                    {% with title=ele.title %}-->
+<!--                                        <li><a href='/news/{{link_id}}'>{{title}}</a></li>-->
+<!--                                    {% endwith %}-->
+<!--                                {% endwith %}-->
+<!--                            {% endif %}-->
+<!--                        {% endfor %}-->
+<!--                        </ul>-->
+<!--                    {% endif %}-->
+
+<!--                {% endfor %}-->
+
+
+<!--            </div>-->
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <section id="CreateNews">
+
+        <div class="shadow"></div>
+        <img src="{% static 'WebImages/title2.png' %}" class="big-title2">
+
+        <div class="container" style=" height:100vh;">
+              <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input type="text" name="author" placeholder=" " />
+                    <label> Name </label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" placeholder=" " />
+                    <label> Email </label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="title" placeholder=" " />
+                    <label> Title </label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="text" placeholder=" " />
+                    <label> Text </label>
+                </div>
+
+                <div class="fileupload">
+                    <input type="file" name="myfile" style=" border:none; outline:none;"/><br><br><br>
+                </div>
+                <button type="submit" class="submitbtn">
+                    <i class ="far fa-paper-plane"></i>
+                    <span class="submittext">
+                        Post
+                    </span>
+                    <span class="loading-animate"></span>
+
+                    </span>
+
+                </button>
+              </form>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="{% static 'js/parallax.js' %}"></script>
+
+
+
+
+
+</body>
+</html>
