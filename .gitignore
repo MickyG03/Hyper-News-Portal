@@ -152,4 +152,4 @@ cython_debug/
 #.idea/
 
 hypernews/news.json
-static/news_images/.
+static/news_images/
