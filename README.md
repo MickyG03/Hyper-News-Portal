@@ -84,8 +84,8 @@ Contributions are welcome! If you have ideas for new features, improvements, or 
 1. https://hyperskill.org/projects/102
 2. https://www.postgresqltutorial.com/postgresql-python/
 3. https://www.freecodecamp.org/news/postgresql-in-python/
-
-5. https://socket.io/docs/v4/
+4. https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjEDP-ol4_PrIo9chVH2-QvFkWYGJI5QIzeIpCE2Oww&s
+5. Background Image: https://www.ebay.com/itm/175357021697
 
 ---
 
