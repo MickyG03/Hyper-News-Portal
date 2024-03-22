@@ -11,6 +11,17 @@
 - Dynamic Data Viewing: The portal offers dynamic data viewing of the latest news articles. Readers can access up-to-date news content directly from their systems, ensuring they stay informed about current events.
 - User-Friendly Interface: HyperNews Portal provides a user-friendly interface for readers to access and read news articles. The interface is designed to be intuitive and easy to navigate, enhancing the overall user experience.
 
+![Picture2](https://github.com/MickyG03/Hyper-News-Portal/assets/76037226/41df12ba-18fd-49a2-827a-40df6bd8a854)
+
+![Picture3](https://github.com/MickyG03/Hyper-News-Portal/assets/76037226/510b4500-58d3-407b-96d8-4a212191a80f)
+
+![Picture4](https://github.com/MickyG03/Hyper-News-Portal/assets/76037226/18fda4db-992e-4f6d-8a4e-dd0233edd8f6)
+
+## Activity Diagram
+
+![Picture5](https://github.com/MickyG03/Hyper-News-Portal/assets/76037226/c0204516-f115-4a6d-a682-2e730edc3238)
+
+
 ## Getting Started
 To get started with Hyper News Portal, follow the steps:
 
